@@ -1,0 +1,266 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Agents | NeuralNest</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="js/agent-demo.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <a class="logo" href="index.html">
+        Neural<span>Nest.</span>
+    </a>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="topics.html">Topics</a>
+        <a href="nvidia-ai.html">NVIDIA</a>
+        <a href="openai-hub.html">OpenAI</a>
+        <a href="ai-agents.html">AI Agents</a>
+        <a href="quiz.html">Quiz</a>
+    </nav>
+</header>
+
+<main>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <p class="tag">THE NEXT GENERATION OF AI</p>
+
+        <h1>Discover the World of <span>AI Agents</span></h1>
+
+        <p>
+            Explore intelligent systems that can plan tasks,
+            use tools and work towards specific goals.
+        </p>
+    </section>
+
+
+    <!-- INTRODUCTION -->
+    <section class="section">
+        <p class="tag">INTRODUCTION</p>
+
+        <h2>What are AI Agents?</h2>
+
+        <p>
+            AI agents are software systems designed to work towards
+            a goal. Depending on their design, they can understand
+            instructions, plan steps, use available tools and
+            evaluate the results of their actions.
+        </p>
+
+        <p>
+            Unlike a basic chatbot that primarily responds to
+            messages, an AI agent can be designed to carry out
+            a sequence of actions.
+        </p>
+    </section>
+
+
+    <!-- HOW AGENTS WORK -->
+    <section class="section">
+        <p class="tag">THE PROCESS</p>
+
+        <h2>How Do AI Agents Work?</h2>
+
+        <div class="agent-grid">
+
+            <div class="agent-card">
+                <div class="agent-number">01</div>
+                <h3>Understand</h3>
+                <p>
+                    The agent receives a goal or instruction
+                    from the user.
+                </p>
+            </div>
+
+            <div class="agent-card">
+                <div class="agent-number">02</div>
+                <h3>Plan</h3>
+                <p>
+                    It breaks the goal into smaller steps
+                    and decides what to do.
+                </p>
+            </div>
+
+            <div class="agent-card">
+                <div class="agent-number">03</div>
+                <h3>Act</h3>
+                <p>
+                    It uses available tools and resources
+                    to perform tasks.
+                </p>
+            </div>
+
+            <div class="agent-card">
+                <div class="agent-number">04</div>
+                <h3>Evaluate</h3>
+                <p>
+                    It checks the results and determines
+                    whether more work is needed.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- TYPES OF AGENTS -->
+    <section class="section">
+        <p class="tag">AGENT ARCHITECTURE</p>
+
+        <h2>Types of AI Agents</h2>
+
+        <div class="agent-grid">
+
+            <div class="agent-card">
+                <h3>Simple Reflex Agents</h3>
+                <p>
+                    Respond to situations using predefined
+                    condition-and-action rules.
+                </p>
+            </div>
+
+            <div class="agent-card">
+                <h3>Goal-Based Agents</h3>
+                <p>
+                    Select actions based on a goal they
+                    are trying to achieve.
+                </p>
+            </div>
+
+            <div class="agent-card">
+                <h3>Learning Agents</h3>
+                <p>
+                    Improve their behaviour using information
+                    gained from experience or feedback.
+                </p>
+            </div>
+
+            <div class="agent-card">
+                <h3>Multi-Agent Systems</h3>
+                <p>
+                    Multiple agents interact or collaborate
+                    to work on a shared or separate set of goals.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- REAL WORLD APPLICATIONS -->
+    <section class="section">
+        <p class="tag">REAL-WORLD APPLICATIONS</p>
+
+        <h2>Where Are AI Agents Used?</h2>
+
+        <div class="agent-grid">
+
+            <div class="agent-card">
+                <h3>Education</h3>
+                <p>
+                    Supporting personalized learning,
+                    explanations and study planning.
+                </p>
+            </div>
+
+            <div class="agent-card">
+                <h3>Healthcare</h3>
+                <p>
+                    Supporting administrative tasks and
+                    information workflows under professional
+                    supervision.
+                </p>
+            </div>
+
+            <div class="agent-card">
+                <h3>Software Development</h3>
+                <p>
+                    Assisting with code analysis, testing,
+                    debugging and documentation.
+                </p>
+            </div>
+
+            <div class="agent-card">
+                <h3>Business</h3>
+                <p>
+                    Helping organize information,
+                    customer support and routine workflows.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- INTERACTIVE SIMULATION -->
+    <section class="section">
+
+        <p class="tag">INTERACTIVE EXPERIENCE</p>
+
+        <h2>Watch an AI Agent at Work</h2>
+
+        <div class="agent-demo">
+
+            <h3>Study Planner Agent</h3>
+
+            <p>
+                Goal: Create a simple study plan for a student
+                preparing for an examination.
+            </p>
+
+            <button id="run-agent">
+                Start Agent Simulation
+            </button>
+
+            <ul id="agent-steps" class="agent-workflow-list">
+            </ul>
+
+            <p id="agent-message" aria-live="polite">
+                The agent is waiting for a task.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- RESPONSIBLE AI -->
+    <section class="section">
+
+        <p class="tag">RESPONSIBLE DEVELOPMENT</p>
+
+        <h2>Challenges and Limitations</h2>
+
+        <div class="agent-card">
+            <p>
+                AI agents can make incorrect decisions, misunderstand
+                instructions or misuse tools when poorly designed.
+            </p>
+
+            <p>
+                Important considerations include data privacy,
+                security, human supervision, reliability and
+                permission before taking significant actions.
+            </p>
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+    <p>© 2026 NeuralNest | Exploring the Future of AI</p>
+</footer>
+
+</body>
+</html>

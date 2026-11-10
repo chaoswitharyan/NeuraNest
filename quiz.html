@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Knowledge Quiz | NeuralNest</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="js/quiz.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <a class="logo" href="index.html">Neural<span>Nest.</span></a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="topics.html">Topics</a>
+            <a href="nvidia-ai.html">NVIDIA</a>
+            <a href="openai-hub.html">OpenAI</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section">
+
+            <p class="tag">TEST YOUR KNOWLEDGE</p>
+
+            <h1>AI Knowledge <span>Challenge.</span></h1>
+
+            <p class="intro">
+                Test what you've learned about artificial intelligence.
+                Answer all questions and discover your score.
+            </p>
+
+            <div class="quiz-box">
+
+                <p id="question-count" class="tag">QUESTION 1 OF 10</p>
+
+                <h2 id="question">Loading question...</h2>
+
+                <div id="answers"></div>
+
+                <p id="feedback" aria-live="polite"></p>
+
+                <button id="next-button" type="button" hidden>
+                    Next Question →
+                </button>
+
+                <div id="result" hidden>
+                    <h2>Your Results 🎉</h2>
+                    <p id="score"></p>
+                    <p id="message"></p>
+                    <button id="restart-button" type="button">
+                        Try Again ↻
+                    </button>
+                </div>
+
+            </div>
+
+            <a class="feature-link" href="index.html">← Back to Home</a>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>NeuralNest © 2026 | AI Knowledge Challenge</p>
+    </footer>
+
+</body>
+</html>

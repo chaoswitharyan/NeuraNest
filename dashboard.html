@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Learning Dashboard | NeuralNest</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="js/dashboard.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <a class="logo" href="index.html">
+        Neural<span>Nest.</span>
+    </a>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="topics.html">Topics</a>
+        <a href="openai-hub.html">OpenAI</a>
+        <a href="ai-agents.html">AI Agents</a>
+        <a href="chatbot.html">NeuralBot</a>
+        <a href="quiz.html">Quiz</a>
+    </nav>
+</header>
+
+<main>
+
+    <section class="hero">
+        <p class="tag">YOUR LEARNING SPACE</p>
+        <h1>My Learning <span>Dashboard</span></h1>
+        <p>Track your learning journey and celebrate your progress.</p>
+    </section>
+
+    <section class="section">
+
+        <div class="dashboard-stats">
+
+            <div class="dashboard-stat">
+                <h3 id="completed-count">0</h3>
+                <p>Topics Completed</p>
+            </div>
+
+            <div class="dashboard-stat">
+                <h3 id="progress-percent">0%</h3>
+                <p>Overall Progress</p>
+            </div>
+
+            <div class="dashboard-stat">
+                <h3 id="best-score">0/10</h3>
+                <p>Best Quiz Score</p>
+            </div>
+
+        </div>
+
+        <div class="progress-panel">
+            <h2>Your Learning Progress</h2>
+
+            <div class="progress-track">
+                <div id="progress-fill"></div>
+            </div>
+
+            <p id="progress-message" aria-live="polite">
+                Start exploring topics to build your progress!
+            </p>
+        </div>
+
+    </section>
+
+
+    <section class="section">
+
+        <p class="tag">YOUR LEARNING CHECKLIST</p>
+        <h2>Explore and Complete Topics</h2>
+
+        <p>
+            Open a topic, learn the basics and mark it as completed
+            when you are ready.
+        </p>
+
+        <div id="topic-list" class="dashboard-grid">
+
+            <!-- Topic cards are added by JavaScript -->
+
+        </div>
+
+    </section>
+
+
+    <section class="section">
+
+        <div class="dashboard-reset">
+            <h2>Manage Your Progress</h2>
+
+            <p>
+                Your progress is stored locally in this browser.
+                Resetting it will clear your completed topics and
+                saved quiz statistics.
+            </p>
+
+            <button type="button" id="reset-progress">
+                Reset My Progress
+            </button>
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 NeuralNest | Exploring the Future of AI</p>
+</footer>
+
+</body>
+</html>

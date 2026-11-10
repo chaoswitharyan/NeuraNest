@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NeuralNest Chatbot</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="js/chatbot.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <a class="logo" href="index.html">
+        Neural<span>Nest.</span>
+    </a>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="topics.html">Topics</a>
+        <a href="nvidia-ai.html">NVIDIA</a>
+        <a href="openai-hub.html">OpenAI</a>
+        <a href="ai-agents.html">AI Agents</a>
+        <a href="quiz.html">Quiz</a>
+    </nav>
+</header>
+
+<main>
+
+    <section class="hero">
+        <p class="tag">YOUR AI LEARNING COMPANION</p>
+
+        <h1>Meet <span>NeuralBot</span></h1>
+
+        <p>
+            Ask questions about Artificial Intelligence,
+            Machine Learning, Neural Networks and more.
+        </p>
+    </section>
+
+    <section class="section">
+
+        <div class="chat-shell">
+
+            <div class="chat-heading">
+                <div>
+                    <h2>NeuralBot Assistant</h2>
+                    <p>NeuralNest Learning Demo</p>
+                </div>
+
+                <span class="bot-status">● Online</span>
+            </div>
+
+            <div
+                id="chat-messages"
+                class="chat-messages"
+                role="log"
+                aria-live="polite"
+                aria-label="Chat conversation"
+            >
+                <div class="chat-message bot-message">
+                    <strong>NeuralBot</strong>
+                    <p>
+                        Hey! Welcome to NeuralNest.
+                        Ask me something about Artificial Intelligence!
+                    </p>
+                </div>
+            </div>
+
+            <div class="quick-prompts">
+                <p>Try asking:</p>
+
+                <button type="button" class="prompt-button"
+                    data-prompt="What is Artificial Intelligence?">
+                    What is AI?
+                </button>
+
+                <button type="button" class="prompt-button"
+                    data-prompt="Explain neural networks">
+                    Neural Networks
+                </button>
+
+                <button type="button" class="prompt-button"
+                    data-prompt="What are AI agents?">
+                    AI Agents
+                </button>
+            </div>
+
+            <form id="chat-form" class="chat-input-area">
+
+                <input
+                    type="text"
+                    id="user-input"
+                    placeholder="Ask NeuralBot something..."
+                    autocomplete="off"
+                    aria-label="Your message"
+                    required
+                >
+
+                <button type="submit" id="send-button">
+                    Send
+                </button>
+
+            </form>
+
+            <p class="chat-disclaimer">
+                Educational demo: responses are generated from
+                predefined JavaScript rules, not a live AI model.
+            </p>
+
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 NeuralNest | Exploring the Future of AI</p>
+</footer>
+
+</body>
+</html>
