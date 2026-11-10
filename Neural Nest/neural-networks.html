@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neural Networks | NeuralNest</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/network-visualizer.js" defer></script>
+</head>
+<body>
+
+<header>
+    <a class="logo" href="index.html">Neural<span>Nest</span></a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="topics.html">Topics</a>
+        <a href="neural-networks.html">Neural Networks</a>
+        <a href="applications.html">Applications</a>
+        <a href="about.html">About</a>
+    </nav>
+</header>
+
+<main>
+    <section class="hero">
+        <p class="tag">INSPIRED BY THE HUMAN BRAIN</p>
+        <h1>Inside a <span>Neural Network</span></h1>
+        <p class="intro">
+            Neural networks are computing systems that learn patterns
+            from examples and use those patterns to make predictions.
+        </p>
+    </section>
+
+    <section class="section">
+        <h2>How Does It <span>Work?</span></h2>
+        <p class="intro">
+            Information passes through connected layers of artificial neurons.
+        </p>
+
+        <div class="cards">
+            <article class="card purple">
+                <div class="emoji">📥</div>
+                <h3>1. Input Layer</h3>
+                <p>Receives the information, such as image pixels, numbers, or other data.</p>
+            </article>
+
+            <article class="card pink">
+                <div class="emoji">⚙️</div>
+                <h3>2. Hidden Layers</h3>
+                <p>Process information using connections, weights, and mathematical functions to learn patterns.</p>
+            </article>
+
+            <article class="card yellow">
+                <div class="emoji">📤</div>
+                <h3>3. Output Layer</h3>
+                <p>Produces a result, such as a prediction, classification, or generated output.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>A Simple <span>Network Diagram</span></h2>
+        <p class="intro">The circles represent neurons in three connected layers.</p>
+
+        <div class="network">
+            <div class="network-column">
+                <h3>Input</h3>
+                <span class="neuron"></span>
+                <span class="neuron"></span>
+                <span class="neuron"></span>
+            </div>
+
+            <div class="network-arrow">→</div>
+
+            <div class="network-column">
+                <h3>Hidden</h3>
+                <span class="neuron neuron-pink"></span>
+                <span class="neuron neuron-pink"></span>
+                <span class="neuron neuron-pink"></span>
+                <span class="neuron neuron-pink"></span>
+            </div>
+
+            <div class="network-arrow">→</div>
+
+            <div class="network-column">
+                <h3>Output</h3>
+                <span class="neuron neuron-yellow"></span>
+                <span class="neuron neuron-yellow"></span>
+            </div>
+        </div>
+        <p class="diagram-note">
+            Simplified illustration: real neural networks may contain
+            many more neurons, layers, and connections.
+        </p>
+    </section>
+
+    <section class="section">
+        <div class="card purple">
+            <h2>Where are neural networks used?</h2>
+            <p>
+                They help power image recognition, voice assistants,
+                language models, recommendation systems, and many
+                other AI technologies.
+            </p>
+            <br>
+            <a href="applications.html">Explore real-world applications →</a>
+        </div>
+    </section>
+    
+<!-- NEURAL NETWORK VISUALIZER -->
+
+<section class="section" id="network-visualizer">
+
+    <p class="tag">INTERACTIVE EXPERIENCE</p>
+
+    <h2>Neural Network Visualizer</h2>
+
+    <p>
+        Explore how information travels through the different
+        layers of an artificial neural network.
+    </p>
+
+    <div class="network-lab">
+
+        <div class="network-diagram-wrap">
+
+            <svg
+                id="network-diagram"
+                viewBox="0 0 560 340"
+                role="img"
+                aria-label="A neural network showing input, hidden and output layers"
+            >
+                <g id="network-connections"></g>
+                <g id="network-nodes"></g>
+            </svg>
+
+        </div>
+
+        <div class="network-controls">
+
+            <button type="button" id="run-network">
+                Run Signal
+            </button>
+
+            <button type="button" id="reset-network">
+                Reset
+            </button>
+
+        </div>
+
+        <p id="network-status" aria-live="polite">
+            Ready! Click Run Signal to begin.
+        </p>
+
+        <p class="network-note">
+            This is a simplified educational simulation of
+            information flow through a neural network.
+        </p>
+
+    </div>
+
+</section>
+
+</main>
+
+<footer>
+    <p>NeuralNest © 2026 | A First-Year CSE Project</p>
+    <p>Designed with HTML and CSS</p>
+</footer>
+
+</body>
+</html>
